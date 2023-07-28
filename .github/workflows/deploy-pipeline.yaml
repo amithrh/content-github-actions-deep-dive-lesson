@@ -52,6 +52,9 @@ jobs:
       contents: 'read'
       id-token: 'write'
       issues: 'write'
+      packages: 'write'
+      security-events: 'write'
+      
     steps:
       - name: Create release
         id: create_release
