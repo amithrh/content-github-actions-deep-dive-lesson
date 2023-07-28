@@ -4,6 +4,12 @@ on: [push]
 jobs:
 
   lint:
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+      issues: 'write'
+      packages: 'write'
+      security-events: 'write'
     runs-on: self-hosted 
     steps: 
       - name: Check out code
